@@ -3,7 +3,7 @@
 * Program Description: This program plays the guess the number game.
 * Input: Number for the user.
 * Output: Tells the users whether to guess higer or lower.
-* Programmer: Justin Ryburn (jryburn@writeme.com)
+* Programmer: Justin Ryburn (justin@ryburn.org)
 * Date: 12/13/01
 ************************************************************************/
 
