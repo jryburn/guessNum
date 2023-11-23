@@ -1,7 +1,7 @@
 /************************************************************************
 * Source Name: guess.cc
 * Program Description: This program plays the guess the number game.
-* Input: Number for the user.
+* Input: Number from the user.
 * Output: Tells the users whether to guess higer or lower.
 * Programmer: Justin Ryburn (justin@ryburn.org)
 * Date: 12/13/01
@@ -53,22 +53,22 @@ void instruct( )
 void get_response(int& p1)
 {
 	system("clear"); // Starts the output on a clear screen.
-	cout << "Please enter a number between 1 and 10: ";
+	cout << "Please enter a number between 1 and 100: ";
 	cin >> p1;
-	if (p1 < 1 || p1 > 10) //invalid input.
+	if (p1 < 1 || p1 > 100) //invalid input.
 	{
 		do //Continues to ask for a valid input.
 		{
-			cout << "\nPlease enter a number between 1 and 10 :";
+			cout << "\nPlease enter a number between 1 and 100 :";
 			cin >> p1;
-		} while (p1 < 1 || p1 > 10);
+		} while (p1 < 1 || p1 > 100);
 	}
 }
 
 void results(int& p1)
 {
 	int comp; // number the computer is thinking of.
-	const int MAX_RANDOM = 10; // maximum size of the random #.
+	const int MAX_RANDOM = 100; // maximum size of the random #.
 	comp = random(MAX_RANDOM);
 	
 	system("clear"); // starts the text output on a clean screen.	
