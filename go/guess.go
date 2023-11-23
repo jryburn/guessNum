@@ -39,7 +39,7 @@ Please enter a number between 1 and 100: `
 func main() {
 	var guess int // Guess from the user
 	fmt.Println(intro)
-	for {
+	for { // Keeping the guesses coming until the user gets it right.
 		fmt.Print(intruct)
 		fmt.Scanln(&guess)
 		if guess < answer { // Guess is too low.
